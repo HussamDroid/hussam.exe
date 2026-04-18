@@ -72,3 +72,9 @@ html, body {
 a, button, [role="button"] {
   cursor: none !important;
 }
+@layer utilities {
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-2xl backdrop-saturate-150 
+           border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)];
+  }
+}
