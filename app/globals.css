@@ -78,3 +78,29 @@ a, button, [role="button"] {
            border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)];
   }
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-custom {
+  animation: marquee 50s linear infinite;
+}
+
+.animate-marquee-reverse-custom {
+  animation: marquee-reverse 50s linear infinite;
+}
+.pause-on-hover:hover .animate-marquee-custom,
+.pause-on-hover:hover .animate-marquee-reverse-custom {
+  animation-play-state: paused;
+}
+.bg-scanlines {
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5) 50%);
+  background-size: 100% 4px;
+}

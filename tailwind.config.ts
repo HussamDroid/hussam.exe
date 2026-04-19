@@ -2,20 +2,26 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors: {
-        background: "#080808",
-        card: "#121212",
-        border: "rgba(255, 255, 255, 0.05)",
+      animation: {
+        // We define the name, duration, timing, and repetition
+        "marquee-infinite": "marquee 30s linear infinite",
+        "marquee-reverse-infinite": "marquee-reverse 30s linear infinite",
       },
-      borderRadius: {
-        '4xl': '2rem',
-        '5xl': '2.5rem',
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
     },
   },
