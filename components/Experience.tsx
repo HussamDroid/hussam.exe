@@ -18,13 +18,13 @@ const Experience = () => {
             <div className="p-3 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 group-hover:scale-110 transition-transform">
               <FiBookOpen size={24} />
             </div>
-            <span className="text-gray-500 font-mono text-[10px] uppercase tracking-widest">2024 — 2027</span>
+            <span className="text-gray-500 font-mono text-[13px] uppercase tracking-widest">2024 — 2028</span>
           </div>
           
           <div>
             <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-1">BSc Computer Science</h3>
             <p className="text-blue-400 font-mono text-xs uppercase tracking-wider mb-4">LJMU Qatar Campus</p>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-400 text-[17px] leading-relaxed">
               Currently a Level 4 student focusing on Machine Learning, Cyber Security, and Full-Stack systems. Actively participating in research projects like MediaEval 2026.
             </p>
           </div>
@@ -36,14 +36,14 @@ const Experience = () => {
             <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 group-hover:scale-110 transition-transform">
               <FiBriefcase size={24} />
             </div>
-            <span className="text-gray-500 font-mono text-[10px] uppercase tracking-widest">Current</span>
+            <span className="text-gray-500 font-mono text-[13px] uppercase tracking-widest">Current</span>
           </div>
           
           <div>
-            <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-1">Junior Developer</h3>
-            <p className="text-blue-400 font-mono text-xs uppercase tracking-wider mb-4">Probation Period</p>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Applying AI/ML models to real-world datasets and developing scalable web architectures. Managing database schemas and session-based security protocols.
+            <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-1">AI Specialist</h3>
+            <p className="text-blue-400 font-mono text-xs uppercase tracking-wider mb-4">Team Lead</p>
+            <p className="text-gray-400 text-[17px] leading-relaxed">
+              My work focuses on leveraging Generative AI for high-end visual marketing and building predictive ML models to drive customer retention and personalized user experiences.
             </p>
           </div>
         </div>

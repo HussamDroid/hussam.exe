@@ -2,7 +2,6 @@ import Timeline from "@/components/Timeline";
 import CertificationMarquee from "@/components/CertificationMarquee";
 import { FiArrowUpRight } from "react-icons/fi"
 
-// app/credentials/page.tsx
 
 export default function CredentialsPage() {
   return (
@@ -16,14 +15,14 @@ export default function CredentialsPage() {
           Credentials
         </h1>
         <p className="max-w-2xl text-gray-500 text-lg mt-6 leading-relaxed">
-          Explore my journey each section represents a milestone in my continuous learning path.
+          Explore my journey. Each section represents a milestone in my continuous learning path.
         </p>
       </div>
 
     <CertificationMarquee />
       <Timeline />
       
-
+    
     </main>
   );
 }
@@ -38,7 +37,7 @@ const CertificationCard = ({ title, issuer, date, link }: { title: string, issue
       <h4 className="text-sm font-bold text-white uppercase tracking-tight group-hover:text-blue-400 transition-colors">
         {title}
       </h4>
-      <p className="text-[10px] text-gray-500 font-mono uppercase tracking-widest mt-1">
+      <p className="text-[10px] text-gray-700 font-mono uppercase tracking-widest mt-1">
         {issuer}
       </p>
     </div>

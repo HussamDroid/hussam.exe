@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="mt-4">
             <h2 className="text-4xl md:text-[50px] font-black text-white uppercase tracking-tighter leading-none min-h-[80px]"> 
               <Typewriter words={[
-                "an ML/AI Engineer",
+                "an ML / AI Engineer",
                 "CS Student", 
                 "a Researcher",
                 "an Aviation Tech"

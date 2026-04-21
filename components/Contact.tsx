@@ -34,13 +34,13 @@ const Contact = () => {
 
       {/* Glass Container */}
       <div className="glass-card md:col-span-12 py-16 px-8 md:px-12 rounded-[40px] bg-gradient-to-b from-white/[0.03] to-transparent">
-        <div className="text-gray-500 font-mono text-[10px] uppercase tracking-widest mb-12">Technical Vitals</div>
+        <div className="text-gray-500 font-mono text-[13px] uppercase tracking-widest mb-12">Technical Vitals</div>
         
         {/* Pulse Dashboard */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20">
-          <VitalStat icon={<FiActivity className="text-green-400" />} label="Status" value="Open to Work" />
-          <VitalStat icon={<FiTerminal className="text-blue-400" />} label="Current Stack" value="Next.js & PyTorch" />
-          <VitalStat icon={<FiDatabase className="text-purple-400" />} label="Training" value="AeroPredict v2" />
+          <VitalStat icon={<FiActivity className="text-green-400" />} label="Status" value="AI Specialist" />
+          <VitalStat icon={<FiTerminal className="text-blue-400" />} label="Current Stack" value="Gen AI & ML Full Stack" />
+          <VitalStat icon={<FiDatabase className="text-purple-400" />} label="Active Projects" value="MediaEval 2026" />
           <VitalStat icon={<FiLayers className="text-orange-400" />} label="Focus" value="MLOps Pipelines" />
         </div>
 
@@ -48,9 +48,9 @@ const Contact = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-4">
-          <SocialButton icon={<HiOutlineMail />} label="Mail" color="from-red-500/20" href="mailto:hussam@example.com" />
-          <SocialButton icon={<FaGithub />} label="GitHub" color="from-gray-500/20" href="https://github.com" />
-          <SocialButton icon={<FaLinkedinIn />} label="LinkedIn" color="from-blue-600/20" href="https://linkedin.com" />
+          <SocialButton icon={<HiOutlineMail />} label="Mail" color="from-red-500/20" href="mailto:hussamsoomro02@gmail.com" />
+          <SocialButton icon={<FaGithub />} label="GitHub" color="from-gray-500/20" href="https://github.com/HussamDroid" />
+          <SocialButton icon={<FaLinkedinIn />} label="LinkedIn" color="from-blue-600/20" href="https://www.linkedin.com/in/hussam-abdul-rahim-soomro-9699b31b6/" />
         </div>
       </div>
     </section>

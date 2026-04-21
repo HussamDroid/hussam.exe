@@ -30,7 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StarField />
         <CustomCursor />
         <Navbar />
-        {children}
+        {/* 'flex-grow' pushes the footer to the bottom if content is short */}
+        <main className="flex-grow">
+          {children}
+          </main>
         <Footer />
       </body>
     </html>

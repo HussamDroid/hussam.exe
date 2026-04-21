@@ -80,7 +80,7 @@ const Timeline = () => {
       />
       <TimelineItem 
         title="Web Developer"
-        subtitle="Full Stack ML Engineer"
+        subtitle="Full-Stack Web Apps"
         location="Freelance"
         date="2020 — 2023"
         isLast={true}

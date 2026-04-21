@@ -38,7 +38,7 @@ const SkillsHUD = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <SkillBar label="Machine Learning" percent="85%" />
         <SkillBar label="Web Development" percent="92%" />
-        <SkillBar label="Artificial Intelligence" percent="70%" />
+        <SkillBar label="Gen AI" percent="88%" />
         <SkillBar label="Git" percent="86%" />
       </div>
     </div>

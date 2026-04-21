@@ -23,28 +23,28 @@ const Footer = () => {
         {/* Center: Quick Links (Optional) */}
         <nav className="flex gap-8 text-gray-500 font-mono text-[10px] uppercase tracking-widest">
           <a href="#persona" className="hover:text-white transition-colors">About</a>
-          <a href="#projects" className="hover:text-white transition-colors">Work</a>
+          <a href="#projects" className="hover:text-white transition-colors">Projects</a>
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </nav>
 
         {/* Right Side: Socials */}
         <div className="flex gap-5">
           <a 
-            href="https://github.com" 
+            href="https://github.com/HussamDroid" 
             target="_blank" 
             className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300"
           >
             <FaGithub size={18} />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/hussam-abdul-rahim-soomro-9699b31b6/" 
             target="_blank" 
             className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300"
           >
             <FaLinkedinIn size={18} />
           </a>
           <a 
-            href="mailto:your@email.com" 
+            href="mailto:Hussamsoomro02@gmail.com" 
             className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300"
           >
             <HiOutlineMail size={18} />

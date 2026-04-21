@@ -4,6 +4,7 @@ import { FiCompass, FiMap, FiGlobe, FiZap } from "react-icons/fi";
 
 // Import your new components
 import EducationCard from "@/components/persona/EducationCard";
+import ExperienceCard from "@/components/persona/ExperienceCard";
 import AboutText from "@/components/persona/AboutText";
 import SkillsHUD from "@/components/persona/SkillsHUD";
 import SocialsHUD from "@/components/persona/SocialsHUD";
@@ -33,6 +34,8 @@ export default function PersonaPage() {
 
           <div className="h-fit">
             <EducationCard />
+            <br />
+            <ExperienceCard />
           </div>
         </div>
 
