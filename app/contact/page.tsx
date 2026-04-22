@@ -34,24 +34,36 @@ const AviationContact = () => {
     <main className="pt-40 pb-20 min-h-screen bg-[#020202] text-white">
       <div className="max-w-6xl mx-auto px-6">
         
-        {/* HUD Header */}
-        <div className="flex justify-between items-end border-b border-blue-500/20 pb-8 mb-12">
-          <div>
-            <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.5em] mb-2 text-glow">
-              System_ID: H-DRAKE_01
-            </p>
-            <h1 className="text-6xl md:text-7xl font-black uppercase italic tracking-tighter">
-              Connect_Sector
-            </h1>
-          </div>
-          <div className="hidden md:block text-right font-mono text-[10px] text-gray-500 uppercase tracking-widest leading-loose">
-            <p>LAT: 25.2854° N</p>
-            <p>LONG: 51.5310° E</p>
-            <p className={status === "SUCCESS" ? "text-green-400" : "text-blue-400"}>
-              Link_Status: {status}
-            </p>
-          </div>
-        </div>
+       {/* HUD Header */}
+<div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-blue-500/20 pb-6 md:pb-8 mb-12 gap-6">
+  <div className="w-full max-w-full overflow-hidden">
+    <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] mb-2 text-glow">
+      System_ID: H-DRAKE_01
+    </p>
+    
+    {/* 1. text-[11vw] makes it scale to the phone width
+      2. break-all ensures it wraps even without spaces
+      3. leading-[0.85] keeps the lines tight 
+    */}
+    <h1 className="text-[11vw] md:text-7xl font-black uppercase italic tracking-tighter leading-[0.85] break-all md:break-normal">
+      Connect<span className="text-blue-500">_</span>Sector
+    </h1>
+  </div>
+
+  {/* Coordinates Section */}
+  <div className="flex flex-row md:flex-col justify-between w-full md:w-auto md:text-right font-mono text-[9px] md:text-[10px] text-gray-500 uppercase tracking-widest leading-loose border-t border-white/5 md:border-none pt-4 md:pt-0">
+    <div className="flex flex-col md:flex-col">
+      <span className="mr-4 md:mr-0">LAT: 25.2854° N</span>
+      <span>LONG: 51.5310° E</span>
+    </div>
+    <div className="text-right md:text-right md:mt-2">
+      <p className={`flex items-center justify-end gap-2 ${status === "SUCCESS" ? "text-green-400" : "text-blue-400"}`}>
+        <span className="w-1 h-1 rounded-full bg-current animate-pulse md:hidden" />
+        LINK_STATUS: {status}
+      </p>
+    </div>
+  </div>
+</div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column: Data Readout */}
