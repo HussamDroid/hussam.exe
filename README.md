@@ -1,19 +1,21 @@
-# Hussam | AI & Aviation Engineer Portfolio ✈️🤖
+# HUSSAM | ML / AI ENGINEER Portfolio
 
-A high-performance, HUD-inspired portfolio built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. Designed to showcase machine learning architectures and aerospace system simulations.
+This is my personal portfolio showcasing my work in Machine Learning, full-stack development, and applied engineering projects.
 
-## 🚀 System Overview
+I focus on building systems that are not just functional, but actually solve real problems, especially in areas where AI can connect with real-world engineering use cases.
+
+## System Overview
 - **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS (Custom Glassmorphism)
 - **Animations:** Framer Motion & Smooth Scroll integration
 - **Contact System:** Integrated via EmailJS
 - **Deployment:** Vercel (Optimized for Edge Runtime)
 
-## 📂 Core Modules
-- **Persona:** Deep dive into technical philosophy and educational background (LJMU Level 4).
-- **Projects:** Showcasing MediaEval 2026 contributions and the AeroPredict framework.
-- **Credentials:** Formal academic and professional diagnostic data.
-- **Contact:** Secure "Mission Control" communication portal.
+## Core Modules
+- **Persona:** Technical background and academic foundation with focus on engineering and applied systems.
+- **Projects:** Selected work demonstrating practical applications and technical problem-solving.
+- **Credentials:** Academic qualifications and relevant professional certifications.
+- **Contact:** Standard communication channels for professional inquiries and collaboration.
 
 ## Installation & Setup
 1. Clone the repository:
