@@ -11,8 +11,8 @@ const PROJECT_DATA = [
     tags: ["Python", "Machine Learning", "Aviation", "Forecasting"],
     accentColor: "#3b82f6",
     image: "/projects/aerosafe.jpg", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/AeroPredict",
+    liveLink: "https://aerosafe.streamlit.app/"
   },
   {
     title: "Movie Recommender",
@@ -20,8 +20,8 @@ const PROJECT_DATA = [
     tags: ["Python", "Machine Learning", "TMDB API", "Streamlit"],
     accentColor: "#f59e0b",
     image: "/projects/movie.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/Movie-recommender",
+    liveLink: "https://movie-recommender-krcx.onrender.com/"
   },
   {
     title: "PropertySearch",
@@ -29,8 +29,8 @@ const PROJECT_DATA = [
     tags: ["PHP", "MYSQL", "Bootstrap", "Full Stack"],
     accentColor: "#a855f7",
     image: "/projects/property.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/PropertySearch",
+    liveLink: "https://propertysearch.infinityfree.me/?i=1"
   },
   {
     title: "Renewable Energy Forecast",
@@ -38,8 +38,8 @@ const PROJECT_DATA = [
     tags: ["Python", "Data Analysis", "Data Visualisation", "Machine Learning", "Streamlit"],
     accentColor: "#ef4444",
     image: "/projects/renewable.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/renewable-energy-forecast",
+    liveLink: "https://hussamdroid.github.io/renewable-energy-forecast/"
   },
   {
     title: "Heart Disease Prediction",
@@ -47,8 +47,8 @@ const PROJECT_DATA = [
     tags: ["Python", "Pandas", "NumPy", "Machine Learning", "Jupyter Notebook"],
     accentColor: "#44bcef",
     image: "/projects/Heart.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/Heart-Disease-Prediction/tree/main/Heart-Disease%20Prediction",
+    liveLink: "https://github.com/HussamDroid/Heart-Disease-Prediction/tree/main/Heart-Disease%20Prediction"
   },  
   {
     title: "3D Website",
@@ -56,8 +56,8 @@ const PROJECT_DATA = [
     tags: ["HTML", "CSS", "JavaScript", "GSAP", "Gulp"],
     accentColor: "#10b981",
     image: "/projects/aerosafe.jpg", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/3D-website",
+    liveLink: "https://hussamdroid.github.io/3D-website/"
   },
   {
     title: "Charity Website",
@@ -65,8 +65,8 @@ const PROJECT_DATA = [
     tags: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap"],
     accentColor: "#10b981",
     image: "/projects/charity.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "https://github.com/HussamDroid/Charity-website",
+    liveLink: "https://hussamdroid.github.io/Charity-website/"
   },
   {
     title: "Travel Agency",
@@ -74,8 +74,8 @@ const PROJECT_DATA = [
     tags: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap"],
     accentColor: "#10b981",
     image: "/projects/travel.png", 
-    codeLink: "https://github.com",
-    liveLink: "https://aerosafe.demo"
+    codeLink: "#",
+    liveLink: "#"
   },
 ];
 
