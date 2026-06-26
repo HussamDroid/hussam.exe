@@ -16,12 +16,12 @@ const EducationCard = () => (
         </p>
         <p className="text-gray-500 font-mono text-xs mb-6 tracking-widest">2024 — 2028</p>
         <div className="flex items-center gap-4 text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">
-          <span>Level 4</span>
+          <span>Student</span>
         </div>
       </div>
     </div>
     <div className="absolute bottom-6 right-8 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[9px] font-mono text-cyan-400 uppercase tracking-[0.3em] backdrop-blur-sm">
-      2nd Year
+      3rd Year
     </div>
     <div className="absolute -inset-px bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[40px] pointer-events-none" />
   </div>

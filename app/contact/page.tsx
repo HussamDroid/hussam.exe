@@ -37,16 +37,16 @@ const AviationContact = () => {
        {/* HUD Header */}
 <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-blue-500/20 pb-6 md:pb-8 mb-12 gap-6">
   <div className="w-full max-w-full overflow-hidden">
-    <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] mb-2 text-glow">
+    {/* <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.3em] md:tracking-[0.5em] mb-2 text-glow">
       System_ID: H-DRAKE_01
-    </p>
+    </p> */}
     
     {/* 1. text-[11vw] makes it scale to the phone width
       2. break-all ensures it wraps even without spaces
       3. leading-[0.85] keeps the lines tight 
     */}
     <h1 className="text-[11vw] md:text-7xl font-black uppercase italic tracking-tighter leading-[0.85] break-all md:break-normal">
-      Connect<span className="text-blue-500">_</span>Sector
+      Contact<span className="text-blue-500">_</span>
     </h1>
   </div>
 
@@ -56,12 +56,12 @@ const AviationContact = () => {
       <span className="mr-4 md:mr-0">LAT: 25.2854° N</span>
       <span>LONG: 51.5310° E</span>
     </div>
-    <div className="text-right md:text-right md:mt-2">
+    {/* <div className="text-right md:text-right md:mt-2">
       <p className={`flex items-center justify-end gap-2 ${status === "SUCCESS" ? "text-green-400" : "text-blue-400"}`}>
         <span className="w-1 h-1 rounded-full bg-current animate-pulse md:hidden" />
         LINK_STATUS: {status}
       </p>
-    </div>
+    </div> */}
   </div>
 </div>
 
@@ -71,21 +71,21 @@ const AviationContact = () => {
             <div className="glass-card !p-8 rounded-[32px] border-blue-500/10 bg-blue-500/[0.01]">
               <div className="flex items-center gap-3 text-blue-400 mb-6">
                 <FiTarget size={18} />
-                <h3 className="font-black uppercase tracking-[0.2em] text-[10px]">Mission Control</h3>
+                <h3 className="font-black uppercase tracking-[0.2em] text-[10px]">About Me</h3>
               </div>
               <div className="space-y-4 font-mono text-[10px] uppercase tracking-wider text-gray-500">
                 <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span>Objective</span>
-                  <span className="text-white">AI / Aviation</span>
+                  <span>Current Title</span>
+                  <span className="text-white">AI Engineer</span>
                 </div>
                 <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span>Base</span>
+                  <span>Located</span>
                   <span className="text-white">Doha, QA</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Signal</span>
+                  <span>Status</span>
                   <span className={status === "SUCCESS" ? "text-green-400" : "text-blue-400 animate-pulse"}>
-                    {status === "IDLE" ? "Stable" : status}
+                    {status === "IDLE" ? "Student" : status}
                   </span>
                 </div>
               </div>
@@ -94,16 +94,16 @@ const AviationContact = () => {
             <div className="glass-card !p-8 rounded-[32px] border-white/5">
               <div className="flex items-center gap-3 text-purple-400 mb-6">
                 <FiRadio size={18} />
-                <h3 className="font-black uppercase tracking-[0.2em] text-[10px]">Comm Channels</h3>
+                <h3 className="font-black uppercase tracking-[0.2em] text-[10px]">Visit</h3>
               </div>
               <div className="space-y-4">
                 <a href="https://linkedin.com/in/hussam" target="_blank" className="flex items-center gap-4 text-xs font-bold hover:text-blue-400 transition-all group">
                    <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors"><FiGlobe /></div>
-                   LINKEDIN_NODE
+                   LINKEDIN
                 </a>
                 <a href="https://github.com/hussamdroid" target="_blank" className="flex items-center gap-4 text-xs font-bold hover:text-blue-400 transition-all group">
                    <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors"><FiZap /></div>
-                   GITHUB_REPOS
+                   GITHUB
                 </a>
               </div>
             </div>
@@ -116,24 +116,24 @@ const AviationContact = () => {
               
               <div className="flex items-center gap-3 mb-10">
                 <div className={`w-2 h-2 rounded-full ${status === "SUCCESS" ? "bg-green-500" : "bg-blue-500 animate-ping"}`}></div>
-                <h2 className="text-2xl font-black uppercase tracking-tighter italic">Establish_Link</h2>
+                <h2 className="text-2xl font-black uppercase tracking-tighter italic">Send a Message</h2>
               </div>
 
               <form ref={form} onSubmit={sendEmail} className="space-y-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Callsign</label>
-                    <input name="user_name" required type="text" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all font-mono text-sm" placeholder="IDENTIFY..." />
+                    <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Name</label>
+                    <input name="user_name" required type="text" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all font-mono text-sm" placeholder="John Doe" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Frequency (Email)</label>
-                    <input name="user_email" required type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all font-mono text-sm" placeholder="ADDRESS..." />
+                    <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Email</label>
+                    <input name="user_email" required type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all font-mono text-sm" placeholder="someone@example.com" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Encrypted Transmission</label>
-                  <textarea name="message" required rows={5} className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all resize-none font-mono text-sm" placeholder="MESSAGE DATA..."></textarea>
+                  <label className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.3em] ml-1">Message</label>
+                  <textarea name="message" required rows={5} className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-blue-500/50 outline-none transition-all resize-none font-mono text-sm" placeholder="Your Message"></textarea>
                 </div>
 
                 <button 
@@ -144,14 +144,14 @@ const AviationContact = () => {
                   }`}
                 >
                   {status === "IDLE" && (
-                    <>INITIATE_BROADCAST <FiSend className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /></>
+                    <>Send Message <FiSend className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /></>
                   )}
                   {status === "SENDING" && "UPLOADING_DATA..."}
                   {status === "SUCCESS" && (
-                    <>LINK_ESTABLISHED <FiCheckCircle /></>
+                    <>Message Sent <FiCheckCircle /></>
                   )}
                   {status === "ERROR" && (
-                    <>LINK_FAILURE <FiAlertCircle /></>
+                    <>Message failed to sent <FiAlertCircle /></>
                   )}
                 </button>
               </form>

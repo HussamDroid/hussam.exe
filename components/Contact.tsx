@@ -38,7 +38,7 @@ const Contact = () => {
         
         {/* Pulse Dashboard */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20">
-          <VitalStat icon={<FiActivity className="text-green-400" />} label="Status" value="AI Specialist" />
+          <VitalStat icon={<FiActivity className="text-green-400" />} label="Status" value="AI Engineer" />
           <VitalStat icon={<FiTerminal className="text-blue-400" />} label="Current Stack" value="Gen AI & ML Full Stack" />
           <VitalStat icon={<FiDatabase className="text-purple-400" />} label="Active Projects" value="MediaEval 2026" />
           <VitalStat icon={<FiLayers className="text-orange-400" />} label="Focus" value="MLOps Pipelines" />

@@ -54,14 +54,14 @@ const Timeline = () => {
       </div>
 
       <TimelineItem 
-        title="Bachelor of Science"
-        subtitle="Computer Science"
-        location="Liverpool John Moores University (Qatar Campus)"
+        title="Computer Science"
+        subtitle="Bachelor of Science"
+        location="Liverpool John Moores University (Qatar)"
         date="2024 — 2028"
         />
       <TimelineItem 
-        title="Diploma of Associate Engineers"
-        subtitle="Computer Information Technology"
+        title="Computer Information Technology"
+        subtitle="Diploma of Associate Engineers"
         location="Sindh, Pakistan"
         date="2021 — 2024"
         />      
@@ -73,7 +73,7 @@ const Timeline = () => {
 
       <TimelineItem 
         title="AI Engineer"
-        subtitle="Full Stack ML Engineer"
+        subtitle="Black Rose Trading Co WLL"
         location="Doha, Qatar"
         date="2026 — Present"
         isLast={true}
