@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise RAG Assistant</title>
+  <desc id="desc">Abstract document and retrieval mark</desc>
+  <rect width="160" height="160" rx="36" fill="#8a1538"/>
+  <path d="M45 38h50l20 20v64H45z" fill="#fff" opacity=".96"/>
+  <path d="M95 38v22h20" fill="none" stroke="#8a1538" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M61 78h38M61 94h38M61 110h25" stroke="#8a1538" stroke-width="8" stroke-linecap="round"/>
+</svg>

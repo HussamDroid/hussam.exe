@@ -6,6 +6,14 @@ import Link from "next/link";
 // --- PROJECT DATA SOURCE ---
 const PROJECT_DATA = [
   {
+    title: "Enterprise RAG Business Assistant",
+    description: "A sanitized portfolio edition of an internal RAG system that grounds business answers across versioned structured data and approved documents, with citations, access controls, and deterministic operational lookups.",
+    tags: ["Python", "Django", "PostgreSQL", "RAG", "Docker"],
+    accentColor: "#8A1538",
+    image: "/projects/enterprise-rag.svg",
+    codeLink: "https://github.com/HussamDroid/enterprise-rag-business-assistant"
+  },
+  {
     title: "AeroSafe",
     description: "A Machine Learning-powered Digital Twin dashboard that predicts the Remaining Useful Life (RUL) of turbofan engines using sensor data.",
     tags: ["Python", "Machine Learning", "Aviation", "Forecasting"],
@@ -128,13 +136,15 @@ const ProjectCard = ({
           >
             <FiGithub size={13} /> Code
           </a>
-          <a 
-            href={liveLink} 
-            target="_blank" 
-            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-mono uppercase tracking-widest"
-          >
-            <FiExternalLink size={13} /> Live
-          </a>
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-mono uppercase tracking-widest"
+            >
+              <FiExternalLink size={13} /> Live
+            </a>
+          )}
         </div>
       )}
     </div>
