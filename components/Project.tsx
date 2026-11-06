@@ -6,6 +6,16 @@ import Link from "next/link";
 // --- PROJECT DATA SOURCE ---
 const PROJECT_DATA = [
   {
+    title: "SouqLens",
+    description: "Multimodal product search for a real e-commerce catalog, supporting English, Arabic and reference photos. Combines multilingual E5, CLIP and BM25 hybrid retrieval with price, category and stock filters, versioned indexes and a deployed Hugging Face demo.",
+    tags: ["Python", "PyTorch", "CLIP", "Multilingual E5", "Gradio"],
+    accentColor: "#38bdf8",
+    image: "/projects/souqlens.svg",
+    codeLink: "https://github.com/HussamDroid/Multimodal-Product-Search-and-Retrieval.",
+    liveLink: "https://huggingface.co/spaces/Hussam07/souqlens",
+    showLinksOnHome: true
+  },
+  {
     title: "Enterprise RAG Business Assistant",
     description: "A sanitized portfolio edition of an internal RAG system that grounds business answers across versioned structured data and approved documents, with citations, access controls, and deterministic operational lookups.",
     tags: ["Python", "Django", "PostgreSQL", "RAG", "Docker"],
@@ -90,7 +100,7 @@ const PROJECT_DATA = [
 
 // --- SUB-COMPONENT: PROJECT CARD ---
 const ProjectCard = ({ 
-  title, description, tags, accentColor, image, codeLink, liveLink, isFullPage 
+  title, description, tags, accentColor, image, codeLink, liveLink, isFullPage, showLinksOnHome = false
 }: any) => (
   <div className="glass-card flex flex-col h-full rounded-[32px] overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 group">
     
@@ -126,12 +136,13 @@ const ProjectCard = ({
         ))}
       </div>
 
-      {/* 2. EXTERNAL LINKS (Your requested style) */}
-      {isFullPage && (
+      {/* Project links also appear on featured demos. */}
+      {(isFullPage || showLinksOnHome) && (
         <div className="flex items-center gap-6 pt-6 border-t border-white/5">
           <a 
             href={codeLink} 
-            target="_blank" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-mono uppercase tracking-widest"
           >
             <FiGithub size={13} /> Code
@@ -140,6 +151,7 @@ const ProjectCard = ({
             <a
               href={liveLink}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-mono uppercase tracking-widest"
             >
               <FiExternalLink size={13} /> Live

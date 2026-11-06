@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">SouqLens multimodal product search</title>
+  <desc id="desc">English, Arabic and image queries connect to a product search lens.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1830"/><stop offset="1" stop-color="#132d43"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#38bdf8" stop-opacity=".2"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="lens" x2="1" y2="1"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bg)"/>
+  <circle cx="900" cy="300" r="330" fill="url(#glow)"/>
+  <g fill="none" stroke="#7dd3fc" stroke-opacity=".08"><path d="M0 160h1200M0 320h1200M0 480h1200M200 0v640M400 0v640M600 0v640M800 0v640M1000 0v640"/></g>
+  <text x="95" y="200" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="20" letter-spacing="6">MULTIMODAL RETRIEVAL</text>
+  <text x="88" y="300" fill="#f0f9ff" font-family="Arial, sans-serif" font-weight="700" font-size="92" letter-spacing="-4">SouqLens</text>
+  <text x="95" y="360" fill="#94a3b8" font-family="Arial, sans-serif" font-size="26">Find it with words. Or a photo.</text>
+  <g fill="#102c43" stroke="#7dd3fc" stroke-opacity=".35">
+    <rect x="95" y="411" width="130" height="56" rx="28"/>
+    <rect x="241" y="411" width="130" height="56" rx="28"/>
+    <rect x="387" y="411" width="154" height="56" rx="28"/>
+  </g>
+  <g fill="#bae6fd" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">
+    <text x="160" y="447">English</text><text x="306" y="447">Arabic</text><text x="464" y="447">Photo</text>
+  </g>
+  <g transform="translate(900 285)" fill="none" stroke="url(#lens)" stroke-width="20">
+    <circle r="116"/><path d="m82 82 105 105" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(845 234)" fill="none" stroke="#e0f2fe" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="110" height="88" rx="12"/><path d="m0 62 30-27 25 23 23-34 32 38"/><circle cx="31" cy="23" r="7"/>
+  </g>
+  <circle cx="766" cy="129" r="10" fill="#38bdf8"/><circle cx="1060" cy="178" r="6" fill="#818cf8"/>
+</svg>
